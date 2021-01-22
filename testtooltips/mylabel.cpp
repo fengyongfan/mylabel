@@ -75,7 +75,7 @@ QString MyLabel::dealMessage(QString msg)
     {
         QString str;
         int time = msg.size()/fontSize;
-        for(int i = 0; i < time-1; i++)
+        for(int i = 0; i <= time-1; i++)
         {
             str = QString(str + msg.mid(i*fontSize,fontSize)+"\r\n");
             qDebug() << "Str" <<str << "   time" << i;
